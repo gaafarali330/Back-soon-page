@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    background-image: url(../imges/soon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::selection {
+    background-color: #F9A826;
+    color: #FFF;
+}
+
+p {
+    margin: 0;
+}
+
+.back-soon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.back-soon h1 {
+    text-align: center;
+    padding: 0 0 40px 0;
+    font-size: 40px;
+    margin: 0;
+}
+
+@media(max-width:452px) {
+    .back-soon h1 {
+        font-size: 34px;
+    }
+}
+
+@media(max-width:320px) {
+    .back-soon h1 {
+        font-size: 28px;
+    }
+}
+
+.count-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media(max-width:452px) {
+    .count-down {
+        flex-direction: column;
+    }
+}
+
+.count-down .time {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F9A826;
+    color: #FFF;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .4s;
+}
+
+@media(max-width:452px) {
+    .count-down .time {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.count-down .time p {
+    font-size: 22px;
+}
+
+.count-down .time p:last-child {
+    font-size: 30px;
+}
+
+.social {
+    padding: 40px 10px 20px 10px;
+}
+
+.social a {
+    padding: 10px 3px;
+    color: #FFF;
+    font-size: 13px;
+}
